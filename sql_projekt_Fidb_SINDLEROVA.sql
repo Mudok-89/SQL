@@ -307,7 +307,7 @@ order by celkový_počet_úvěrů DESC;
 -- Nejvyšší částka úvěrů 10.502.628 Kč byla vyplacena v Praze
 
 
---- TAK MI KONEČNĚ DOŠLO, ŽE TO MUSÍM SPOJÍT DO TOHO CTE vše ZNOVU a  pokládat potom dotazy
+--- Je potřeba vše spojit do CTE, pokládat potom dotazy
 DROP TABLE IF EXISTS tmp_district_analytics_pa_1;
 CREATE TEMPORARY TABLE tmp_district_analytics_pa_1 AS (
     SELECT
